@@ -1,0 +1,382 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 2rem;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-menu .active {
+    text-decoration: underline;
+}
+
+.cart img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content .accent {
+    color: #ff5733;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-image img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.about .accent {
+    color: #ff5733;
+}
+
+.about-image img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.secondary-button {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* Popular Food Section */
+.popular-food {
+    background-color: #fff;
+    padding: 4rem 0;
+}
+
+.food-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-card {
+    width: 30%;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+}
+
+.food-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.food-card h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.rating {
+    color: #ffcc00;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Features Section */
+.features {
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+.feature .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    padding: 4rem 0;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial {
+    width: 30%;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.customer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.customer-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.rating {
+    color: #ffcc00;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 4rem 0;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    .food-grid {
+        flex-direction: column;
+    }
+
+    .food-card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .features-grid {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .testimonials {
+        padding: 2rem 0;
+    }
+
+    .testimonial-grid {
+        flex-direction: column;
+    }
+
+    .footer .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+body {
+        font-family: 'Poppins', sans-serif;
+      }
+      .text-primary {
+        color: #FF9D02 !important;
+      }
+      h1, h2, h3, h4, .navbar-brand {
+        color: #232323;
+      }
+      p, .nav-link, .footer, .card-body {
+        color: #8E8E8E;
+      }
+      .btn-primary {
+        background-color: #FF9D02;
+        border-color: #FF9D02;
+      }
+      .btn-primary:hover {
+        background-color: #e88f02;
+        border-color: #e88f02;
+      }
+      .navbar-light .navbar-toggler-icon {
+        background-color: #eda34ff7;
+      }
+      .footer {
+        background-color: #f1ac5033;
+      }
+      .footer a {
+        color: #ffffff;
+      }
+      .footer a:hover {
+        color: #FF9D02;
+      }
+      
